@@ -1,0 +1,28 @@
+#include<stdio.h>
+ #include<stdlib.h>
+ int main()
+   {
+     int z=1,rows;
+     printf("Enter the number rows your want:\n");
+     scanf("%d",&rows);
+     int spc=rows+4-1;
+     for (int i = 1; i <= rows; i++)
+     {       
+             for (int k = spc; k >= 1; k--)
+             {
+                
+                 printf(" ");
+                
+                
+             }
+         for (int j = 0; j < i; j++)
+         {
+             printf("%d ",z++);
+         }
+     printf("\n");   
+     spc--;
+        
+     }
+    
+     return 0;
+ }
