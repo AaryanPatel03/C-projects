@@ -1,0 +1,26 @@
+#include<stdio.h>
+ #include<stdlib.h>
+ int main()
+   {
+     int a,b,sum=0,r;
+     printf("Enter the start of the range:\n");
+     scanf("%d",&a);
+     printf("Enter the end of the range:\n");
+     scanf("%d",&b);
+     for (int i = a; i < b; i++)
+   {
+       for (int j = i; j > 0; j=j/10)
+        {
+            r=j%10;
+            sum+=r*r*r;
+        }
+        if (sum==i)
+        {
+            printf("%d ",i);
+         }
+         sum=0;
+        
+    }
+    
+    return 0;
+}
