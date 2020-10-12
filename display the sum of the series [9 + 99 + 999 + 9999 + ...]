@@ -1,0 +1,16 @@
+#include<stdio.h>
+ #include<math.h>
+ int main()
+   {
+     int a,sum=0,b=9;
+     printf("Enter the number of terms:\n");
+     scanf("%d",&a);
+     for (int i = 1; i <= a;i++)
+   {
+       printf("%d ",b);
+     sum+=b;
+        b=b*10+9;
+    }
+     printf("The total sum is %d",sum);
+     return 0;
+ } 
